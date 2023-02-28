@@ -1,2 +1,4 @@
 alert("Hello Bros");
-console.log("Study Nodejs")
+
+
+console.log("Follow your dream, live 100%")
