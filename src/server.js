@@ -1,10 +1,14 @@
 
-const express = require('express')
+import express from 'express'
+import configViewEngine from './configs/viewEngine'
+
 const app = express()
 const port = 3005
 
+configViewEngine(app);
+
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.render('index.ejs')
 })
 
 app.get('/about', (req, res) => {
@@ -14,3 +18,4 @@ app.get('/about', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
