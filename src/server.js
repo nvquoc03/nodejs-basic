@@ -9,6 +9,9 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.use(express.urlencoded({ extended: true }));//-> Giúp gửi data từ Client lên Server và cs thể lấy data 1 cách đơn giản
+app.use(express.json()); //-> Giúp gửi data từ Client lên Server và cs thể lấy data 1 cách đơn giản
+
 // setup view engine
 configViewEngine(app);
 
