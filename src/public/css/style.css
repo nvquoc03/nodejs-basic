@@ -67,5 +67,8 @@ body {
   .btn-save-file{
    margin-top: 10px;
    cursor:pointer;
-   /* margin-left: 60px; */
+  }
+
+  hr{
+    border-top: 3px solid #eee !important;
   }
