@@ -11,7 +11,7 @@ const initAPIRoute = (app) => {
     router.delete('/delete-user/:id', APIController.deleteUser); // method DELETE -> Delete data
 
 
-    return app.use('/api/v1/', router) // "/" ở đây là tiền tố khi init web route
+    return app.use('/api/v1/', router) // ở đây là tiền tố khi init api route
 
 }
 export default initAPIRoute;
